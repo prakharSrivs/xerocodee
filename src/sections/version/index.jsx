@@ -2,10 +2,10 @@ import React from 'react';
 // Chakra imports
 import { Box, Button, Flex, Image, Link, Text, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
 // Assets
-import Typescript from 'assets/img/free/started/Typescript.png';
-import Next from 'assets/img/free/started/Next.png';
-import Vue from 'assets/img/free/started/Vue.png';
-import ReactJS from 'assets/img/free/started/React.png';
+import Typescript from 'assets/img/started/Typescript.png';
+import Next from 'assets/img/started/Next.png';
+import Vue from 'assets/img/started/Vue.png';
+import ReactJS from 'assets/img/started/React.png';
 
 
 

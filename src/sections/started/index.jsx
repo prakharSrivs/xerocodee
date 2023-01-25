@@ -3,8 +3,8 @@ import React from 'react';
 import { Box, Flex, Button, Icon, Grid, Image, Text, Link, useColorModeValue } from '@chakra-ui/react';
 
 // Assets
-import imageDark from 'assets/img/free/started/section4-dark.png';
-import imageLight from 'assets/img/free/started/section4-light.png';
+import imageDark from 'assets/img/started/section4-dark.png';
+import imageLight from 'assets/img/started/section4-light.png';
 import { MdChevronRight } from 'react-icons/md';
 
 // Custom components

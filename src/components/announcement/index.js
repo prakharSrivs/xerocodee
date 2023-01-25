@@ -1,11 +1,10 @@
 /*eslint-disable*/
 import React from "react";
 import { Flex, Icon, Text, Link } from "@chakra-ui/react";
-import Bg from "assets/img/free/layout/Announcement.png";
-import { BrandLogo } from "components/icons/Icons";
+import Bg from "assets/img/layout/Announcement.png";
 export default function Footer() {
   return (
-    <Link href='https://feedback.horizon-ui.com/'>
+    <Link href='/'>
       <Flex
         px={{
           base: "20px",
@@ -24,13 +23,6 @@ export default function Footer() {
           maxW='1170px'     
           justifyContent='space-between'>
           <Flex flexDirection='row' mx='auto'>
-            <Icon
-              me={{ base: "10px", lg: "10px" }}
-              as={BrandLogo}
-              color='white'
-              w='16px'
-              h='16px'
-            />
             <Text
               fontSize={{ base: "sm", md: "sm" }}
               mb='unset'
@@ -38,8 +30,7 @@ export default function Footer() {
               lineHeight='120%'
               textAlign='center'
               fontWeight='700'>
-              We've just released the Horizon UI's feedback hub! A better way to
-              submit your feedback and ideas! 🏆
+              If you only give it a try, you won't want to stop using it. The more websites you make, the more time you'll save! 🏆
             </Text>
           </Flex>
         </Flex>

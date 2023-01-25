@@ -1,9 +1,9 @@
 import React from 'react';
 // Chakra imports
 import { Box, Button, Icon, Flex, Image, Link, Text, useColorModeValue } from '@chakra-ui/react';
-import dashboardDark from 'assets/img/free/upgrade/section2-dashboard-dark.png';
+import dashboardDark from 'assets/img/upgrade/section2-dashboard-dark.png';
 // Assets
-import dashboardLight from 'assets/img/free/upgrade/section2-dashboard-light.png';
+import dashboardLight from 'assets/img/upgrade/section2-dashboard-light.png';
 import { MdChevronRight } from 'react-icons/md';
 
 // Custom components

@@ -24,14 +24,14 @@ import React from 'react';
 // Chakra imports
 import { Flex } from '@chakra-ui/react';
 // Custom components
-import Hero from 'sections/free/hero';
-import Tools from 'sections/free/tools';
-import Upgrade from 'sections/free/upgrade';
-import Version from 'sections/free/version';
-import GetStarted from 'sections/free/started';
-import OpenSource from 'sections/free/openSource';
-import Numbers from 'sections/free/numbers';
-import Overview from 'sections/free/overview';
+import Hero from 'sections/hero';
+import Tools from 'sections/tools';
+import Upgrade from 'sections/upgrade';
+import Version from 'sections/version';
+import GetStarted from 'sections/started';
+import OpenSource from 'sections/openSource';
+import Numbers from 'sections/numbers';
+import Overview from 'sections/overview';
 export default function Default() {
 	return (
 		<Flex direction={{ base: 'column' }}>

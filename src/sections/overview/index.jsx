@@ -3,13 +3,12 @@ import React from 'react';
 import { Button, Box, Flex, Text, Link, useColorModeValue } from '@chakra-ui/react';
 // Assets
 
-import image from 'assets/img/free/overview/image.png';
-import image1 from 'assets/img/free/overview/image-1.png';
-import image2 from 'assets/img/free/overview/image-2.png';
-// import image3 from "assets/img/free/overview/image-3.png";
-import image4 from 'assets/img/free/overview/image-4.png';
-import image5 from 'assets/img/free/overview/image-5.png';
-import image6 from 'assets/img/free/overview/image-6.png';
+import image from 'assets/img/overview/image.png';
+import image1 from 'assets/img/overview/image-1.png';
+import image2 from 'assets/img/overview/image-2.png';
+import image4 from 'assets/img/overview/image-4.png';
+import image5 from 'assets/img/overview/image-5.png';
+import image6 from 'assets/img/overview/image-6.png';
 
 // Custom components
 import InnerContent from 'layouts/innerContent';

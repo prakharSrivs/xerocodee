@@ -17,7 +17,7 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { IoLogoGithub, IoMdMoon, IoMdSunny } from "react-icons/io";
 import { IoMenuOutline } from "react-icons/io5";
-import Logo from "assets/img/free/logo/Logo.png";
+import Logo from "assets/img/logo/Logo.png";
 
 
 export default function AdminNavbar(props) {

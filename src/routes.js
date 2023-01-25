@@ -4,7 +4,7 @@ import { Icon } from "@chakra-ui/react";
 import { MdHome } from "react-icons/md";
 
 // Admin Imports
-import Free from "views/free";
+import Free from "views";
 
 const routes = [
   // --- Dashboards ---
