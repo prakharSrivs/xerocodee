@@ -1,6 +1,6 @@
 import React from 'react';
 // Chakra imports
-import { Box, Icon, Flex, Image, Link, Text, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
+import { Box, Flex, Image, Link, Text, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
 // Assets
 import card1 from 'assets/img/free/tools/card1.png';
 import card2 from 'assets/img/free/tools/card2.png';

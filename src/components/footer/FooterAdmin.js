@@ -84,7 +84,7 @@ export default function Footer() {
               </Text>
             </Box>
           </Flex>
-          <Link href='https://discord.gg/f6tEKFBd4m'>
+          <Link href='/'>
             <Button
               ms={{ base: "0px", lg: "auto" }}
               bg='white'
@@ -120,7 +120,7 @@ export default function Footer() {
             lg: "360px",
           }}>
           <Link href='/'>
-            <img src={Logo} width="200" height="250" />
+            <input type="image" img src = {Logo} alt="Logo" width="200" height="65" />
           </Link>
           <Text
             lineHeight='180%'

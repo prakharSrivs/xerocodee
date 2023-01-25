@@ -306,7 +306,7 @@ export default function GetStarted() {
                     }}>
                     <a
                       href='https://www.producthunt.com/posts/horizon-ui?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-horizon&#0045;ui'
-                      target='_blank'>
+                      rel="noreferrer" target='_blank'>
                       <img
                         src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=342582&theme=light&period=daily'
                         alt='Horizon&#0032;UI - Trendiest&#0032;open&#0045;source&#0032;React&#0032;admin&#0032;template | Product Hunt'
@@ -330,7 +330,7 @@ export default function GetStarted() {
         w='100%'
         mt={{ base: "20px", md: "20px", xl: "140px" }}
         maxW='calc(100% - 40px)'
-        w='1170px'
+        width='1170px'
         mx={{ base: "20px", md: "auto" }}
       />
     </Flex>

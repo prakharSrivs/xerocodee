@@ -112,7 +112,7 @@ export default function AdminNavbar(props) {
         mb={gap}>
 
         <Link href='/'>
-            <img src={Logo} width="200" height="250" />
+            <input type="image" img src = {Logo} alt="Logo" width="200" height="65" />
         </Link>
 
         <Flex ms='auto'>
