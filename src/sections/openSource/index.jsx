@@ -54,7 +54,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                OPEN SOURCE ADMIN TEMPLATE
+                Connect Database & API
               </Text>
               <Text
                 fontWeight='800'

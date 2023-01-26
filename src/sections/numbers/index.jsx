@@ -14,7 +14,7 @@ import {
 import GitHubButton from "react-github-btn";
 import { IoLogoGithub } from "react-icons/io";
 import { FaDiscord } from "react-icons/fa";
-import { FigmaLogo, ProductHuntLogo } from "components/icons/Icons";
+import { FigmaLogo } from "components/icons/Icons";
 
 // Custom components
 import Card from "components/card/Card";
@@ -271,12 +271,6 @@ export default function GetStarted() {
                     w={{ base: "50px", md: "74px" }}
                     h={{ base: "50px", md: "74px" }}
                     minW={{ base: "50px", md: "74px" }}>
-                    <Icon
-                      as={ProductHuntLogo}
-                      w='18px'
-                      h='21px'
-                      color='white'
-                    />
                   </Flex>
                   <Box me='auto'>
                     <Text

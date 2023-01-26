@@ -4,7 +4,7 @@ import heroImageDark from 'assets/img/hero/hero-image-dark.png';
 import heroImageLight from 'assets/img/hero/hero-image-light.png';
 import heroBgDark from 'assets/img/hero/heroBgDark.png';
 import heroBgLight from 'assets/img/hero/heroBgLight.png';
-import { FigmaLogo, ReactLogo, TailwindLogo } from 'components/icons/Icons';
+import { JavascriptLogo, NextLogo, ReactLogo, TypescriptLogo, TailwindLogo } from 'components/icons/Icons';
 import { MdChevronRight } from 'react-icons/md';
 // Custom components
 import { VSeparator } from 'components/separator/Separator';
@@ -41,11 +41,11 @@ export default function Hero() {
 							color={textColor}
 							fontSize={{ base: '26px', md: '38px', xl: '46px' }}
 							mb='30px'
-							fontWeight='500'>
+							fontWeight='600'>
 							XeroCodee
 							<br />
 							<Text as='span' fontWeight='800'>
-								Drag .Drop .Publish
+								.drag .drop .publish
 							</Text>
 						</Text>
 						<Text
@@ -53,12 +53,11 @@ export default function Hero() {
 							fontSize='lg'
 							w={{ base: '100%', lg: '55%', xl: '45%' }}
 							mb='30px'>
-							There is <b>XEROCODEE</b> if there is React/Typescript and a WebApp or MobileApp. 
-							If you only give it a try, you won't want to stop using it. 
-							The more websites you make, the more time you'll save.
+							With &nbsp; <b>XeroCodee</b>,&nbsp; you can create web pages, alter them, and even link your current database without writing code. 
+							You can even integrate APIs and do a lot more.
 						</Text>
 						<Flex align='center' mb='30px'>
-							<Link href='#version'>
+							<Link href='/'>
 								<Button
 									py='20px'
 									px='16px'
@@ -74,6 +73,13 @@ export default function Hero() {
 							</Link>
 
 							<Icon
+								as={JavascriptLogo}
+								color={textColor}
+								w='26px'
+								h='24px'
+								me={{ base: '14px', md: '25px' }}
+							/>
+							<Icon
 								as={ReactLogo}
 								color={textColor}
 								w='26px'
@@ -81,13 +87,25 @@ export default function Hero() {
 								me={{ base: '14px', md: '25px' }}
 							/>
 							<Icon
-								as={FigmaLogo}
+								as={NextLogo}
 								color={textColor}
 								w='18px'
 								h='25px'
 								me={{ base: '14px', md: '20px' }}
 							/>
-							<Icon as={TailwindLogo} color={textColor} w='39px' h='23px' />
+							<Icon
+								as={TypescriptLogo}
+								color={textColor}
+								w='18px'
+								h='25px'
+								me={{ base: '14px', md: '20px' }}
+							/>
+							<Icon 
+								as={TailwindLogo}
+								color={textColor}
+								w='39px'
+								h='23px' 
+							/>
 						</Flex>
 						<Flex align='center'>
 							<Text
