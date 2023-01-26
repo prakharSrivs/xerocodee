@@ -4,7 +4,6 @@ import { Flex } from '@chakra-ui/react';
 // Custom components
 import Hero from 'sections/hero';
 import Tools from 'sections/tools';
-import Upgrade from 'sections/upgrade';
 import Version from 'sections/version';
 import GetStarted from 'sections/started';
 import OpenSource from 'sections/openSource';
@@ -20,7 +19,6 @@ export default function Default() {
 			<OpenSource />
 			<Numbers />
 			<Tools />
-			<Upgrade />
 		</Flex>
 	);
 }

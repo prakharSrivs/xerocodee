@@ -80,11 +80,11 @@ export default function Footer() {
                 mb={{ base: "20px", lg: "unset" }}
                 color='white'
                 fontWeight='700'>
-                Feel free to ask questions, report issues, and meet new people.
+                You are welcome to ask questions, report problems, and meet new people.
               </Text>
             </Box>
           </Flex>
-          <Link href='/'>
+          <Link href='https://discord.gg/FTf9VD7pMB'>
             <Button
               ms={{ base: "0px", lg: "auto" }}
               bg='white'
@@ -95,7 +95,7 @@ export default function Footer() {
               borderRadius='12px'
               w='276px'
               h='54px'>
-              Join the #HorizonUI Community!
+              Join the #xerocodee Community!
             </Button>
           </Link>
         </Flex>
