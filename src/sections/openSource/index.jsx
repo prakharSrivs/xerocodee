@@ -63,19 +63,18 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                Dark & Light mode Admin Template
+                Connect database in seconds
               </Text>
               <Text
                 color={textColorSecondary}
                 fontSize='lg'
                 w={{ base: "90%", md: "100%" }}
                 mb='30px'>
-                Choose your favorite theme mode! Horizon UI is available in two
-                main features, Dark & Light theme modes!
+                Connect Database & API
               </Text>
               <Flex align='center'>
                 <Link
-                  href='#version'>
+                  href='/'>
                   <Button
                     py='20px'
                     px='16px'
@@ -89,7 +88,7 @@ export default function GetStarted() {
                     <Icon as={MdChevronRight} color='white' h='16px' w='16px' />
                   </Button>
                 </Link>
-                <Link href='https://www.figma.com/community/file/1098131983383434513/Horizon-UI---Trendiest-Open-Source-Admin-Template'>
+                <Link href='/'>
                   <Button
                     variant='no-hover'
                     border='1px solid'
@@ -102,7 +101,7 @@ export default function GetStarted() {
                     h='54px'
                     bg='transparent'
                     my='auto'>
-                    See Figma version
+                    Live preview
                   </Button>
                 </Link>
               </Flex>

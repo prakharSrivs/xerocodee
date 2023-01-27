@@ -55,7 +55,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                HORIZON UI IN NUMBERS
+                BENEFITS XEROCODEE
               </Text>
               <Text
                 fontWeight='800'
@@ -64,7 +64,7 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                Expand your horizons with Horizon UI!
+                Advantages Low-Code Development Tools
               </Text>
               <Text
                 color={textColorSecondary}
@@ -72,16 +72,15 @@ export default function GetStarted() {
                 w='100%'
                 lineHeight='28px'
                 mb='30px'>
-                "A useful admin template that perfectly combines the UI with UX.
-                The diversity of screens (NFT Page, Car Interface, Smart Home,
-                etc.) helps the user reduce many workdays. For sure, you can
-                broaden your web design horizons with Horizon!"
+                Instead of spending many hours hard coding everything,
+                low-code development allows you to construct, update, and test websites or web apps using visual tools.
+                Low-code development platforms enable developers of various skill levels to create apps in as little time as feasible.
               </Text>
-              <Flex alignItems='center'>
+              {/* <Flex alignItems='center'>
                 <Avatar h='48px' w='48px' me='20px' src={avatar} />
                 <Box>
                   <Text color={textColor} fontSize='md' fontWeight='800'>
-                    Elisa Paduraru
+                    Arya Soni
                   </Text>
                   <Flex align='center'>
                     <Text
@@ -100,7 +99,7 @@ export default function GetStarted() {
                     </Link>
                   </Flex>
                 </Box>
-              </Flex>
+              </Flex> */}
             </Box>
           </Flex>
           <Flex ms='auto' direction='column' width='stretch'>
@@ -122,7 +121,7 @@ export default function GetStarted() {
                     w={{ base: "50px", md: "74px" }}
                     h={{ base: "50px", md: "74px" }}
                     minW={{ base: "50px", md: "74px" }}>
-                    <Icon as={IoLogoGithub} h='32px' w='32px' color='white' />
+                    {/* <Icon as={IoLogoGithub} h='32px' w='32px' color='white' /> */}
                   </Flex>
                   <Box
                     me={{ base: "40px", md: "auto" }}
@@ -134,7 +133,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      970+
+                      50+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -142,18 +141,9 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      STARS ON GITHUB
+                      Modern Themes
                     </Text>
                   </Box>
-                  <GitHubButton
-                    w='200px'
-                    size='large'
-                    href='https://github.com/horizon-ui/horizon-ui-chakra'
-                    data-icon='octicon-star'
-                    data-show-count='true'
-                    aria-label='Star horizon-ui/horizon-ui-chakra on GitHub'>
-                    Star
-                  </GitHubButton>
                 </Flex>
               </Card>
               <Card
@@ -182,7 +172,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      6,600+
+                      100+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -190,7 +180,7 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      FIGMA DUPLICATES
+                      UI Component
                     </Text>
                   </Box>
                   <Link
@@ -198,11 +188,11 @@ export default function GetStarted() {
                     w='max-content'
                     color={brandColor}
                     fontWeight='700'
-                    href='https://www.figma.com/community/file/1098131983383434513/Horizon-UI---Trendiest-Open-Source-Admin-Template'
+                    href='/'
                     fontSize='sm'
                     whiteSpace='nowrap'
                     textDecor='underline'>
-                    See Horizon UI for Figma!
+                    See XeroCodee UI for Figma!
                   </Link>
                 </Flex>
               </Card>
@@ -222,7 +212,7 @@ export default function GetStarted() {
                     w={{ base: "50px", md: "74px" }}
                     h={{ base: "50px", md: "74px" }}
                     minW={{ base: "50px", md: "74px" }}>
-                    <Icon as={FaDiscord} w='28px' h='22px' color='white' />
+                    {/* <Icon as={FaDiscord} w='28px' h='22px' color='white' /> */}
                   </Flex>
                   <Box me='auto'>
                     <Text
@@ -232,7 +222,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      90+
+                      4+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -240,10 +230,10 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      DISCORD MEMBERS
+                      Database
                     </Text>
                   </Box>
-                  <Link
+                  {/* <Link
                     mt={{ base: "20px", md: "unset" }}
                     w='max-content'
                     color={brandColor}
@@ -253,7 +243,7 @@ export default function GetStarted() {
                     whiteSpace='nowrap'
                     textDecor='underline'>
                     Join #HorizonUI Community!
-                  </Link>
+                  </Link> */}
                 </Flex>
               </Card>
               <Card
@@ -280,7 +270,7 @@ export default function GetStarted() {
                       fontSize={{ base: "22px", md: "34px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      #3 🏆
+                      50+
                     </Text>
                     <Text
                       fontWeight='700'
@@ -289,7 +279,7 @@ export default function GetStarted() {
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'
                       whiteSpace='nowrap'>
-                      ON PRODUCT HUNT
+                      Pre-Define API 
                     </Text>
                   </Box>
                   <Box
@@ -298,21 +288,6 @@ export default function GetStarted() {
                       base: "scale(0.8) translate(-30px,0px)",
                       md: "scale(0.8) translate(30px,0px)",
                     }}>
-                    <a
-                      href='https://www.producthunt.com/posts/horizon-ui?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-horizon&#0045;ui'
-                      rel="noreferrer" target='_blank'>
-                      <img
-                        src='https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=342582&theme=light&period=daily'
-                        alt='Horizon&#0032;UI - Trendiest&#0032;open&#0045;source&#0032;React&#0032;admin&#0032;template | Product Hunt'
-                        style={{
-                          width: "250px",
-                          height: "54px",
-                          pointerEvents: "none",
-                        }}
-                        width='250'
-                        height='54'
-                      />
-                    </a>
                   </Box>
                 </Flex>
               </Card>

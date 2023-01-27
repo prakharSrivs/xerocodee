@@ -49,7 +49,8 @@ export default function GetStarted() {
 								Launch a website in seconds.
 							</Text>
 							<Text color={textColorSecondary} fontSize='lg' w={{ base: '90%', md: '100%' }} mb='30px'>
-								Save time and let XeroCodee build a revenue-ready website in 30 seconds.
+								Save time by using XeroCodee to create a revenue-ready website in 30 seconds.
+								It gives you access to all of the resources you need to develop your business with a single login.							
 							</Text>
 							<Flex align='center' mb='30px'>
 								<Flex me={{ base: '20px', md: '50px' }} direction='column'>
