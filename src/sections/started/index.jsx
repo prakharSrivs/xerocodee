@@ -37,7 +37,7 @@ export default function GetStarted() {
 								fontSize='sm'
 								w='100%'
 								mb='10px'>
-								HORIZON'S MAIN FEATURES
+								Drag n Drop 
 							</Text>
 							<Text
 								fontWeight='800'
@@ -46,11 +46,10 @@ export default function GetStarted() {
 								lineHeight={{ base: '34px', md: '60px' }}
 								mb='20px'
 								maxW={{ base: '80%', md: 'unset' }}>
-								Turn your datas into a beautiful dashboard
+								Launch a website in seconds.
 							</Text>
 							<Text color={textColorSecondary} fontSize='lg' w={{ base: '90%', md: '100%' }} mb='30px'>
-								The beauty of Horizon is that you can give life to all of your data into a dashboard
-								with a very modern and beautiful UI!
+								Save time and let XeroCodee build a revenue-ready website in 30 seconds.
 							</Text>
 							<Flex align='center' mb='30px'>
 								<Flex me={{ base: '20px', md: '50px' }} direction='column'>
@@ -60,7 +59,7 @@ export default function GetStarted() {
 										fontSize={{ base: '30px', md: '38px' }}
 										lineHeight='100%'
 										mb='10px'>
-										70+
+										100+
 									</Text>
 									<Text
 										color={textColorSecondary}
@@ -77,19 +76,19 @@ export default function GetStarted() {
 										fontSize={{ base: '30px', md: '38px' }}
 										lineHeight='100%'
 										mb='10px'>
-										7+
+										50+
 									</Text>
 									<Text
 										color={textColorSecondary}
 										fontWeight='700'
 										fontSize={{ base: 'xs', md: 'sm' }}
 										letterSpacing='2px'>
-										EXAMPLES
+										THEMES
 									</Text>
 								</Flex>
 							</Flex>
 							<Flex align='center'>
-								<Link href='#version'>
+								<Link href='/'>
 									<Button
 										py='20px'
 										px='16px'
@@ -99,11 +98,11 @@ export default function GetStarted() {
 										me='20px'
 										w='160px'
 										h='54px'>
-										Try Horizon now
+										Try XeroCodee
 										<Icon as={MdChevronRight} color='white' h='16px' w='16px' />
 									</Button>
 								</Link>
-								<Link href='https://horizon-ui.com/horizon-ui-chakra/'>
+								<Link href='/'>
 									<Button
 										variant='no-hover'
 										border='1px solid'

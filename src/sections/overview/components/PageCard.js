@@ -39,7 +39,7 @@ export default function PageCard(props) {
           <Icon as={MdOpenInNew} color={textColor} />
         </Flex>
         <Box bg='Red' h='100%' w='100%'></Box>
-        <Image h='100%' w='110%' src={image} />
+        <Image h='100%' w='100%' src={image} />
       </Card>
     </Link>
   );

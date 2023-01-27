@@ -3,13 +3,16 @@ import React from 'react';
 import { Button, Box, Flex, Text, Link, useColorModeValue } from '@chakra-ui/react';
 // Assets
 
-import image1 from 'assets/img/overview/image-1.png';
-import image2 from 'assets/img/overview/image-2.png';
-import image4 from 'assets/img/overview/image-4.png';
-import image5 from 'assets/img/overview/image-5.png';
-import image6 from 'assets/img/overview/image-6.png';
+import PropsPanel from 'assets/img/overview/props-panel.png';
+import LayerPanel from 'assets/img/overview/layer-panel.png';
+import Shortcuts from 'assets/img/overview/shortcuts.png';
 
-import One from 'assets/img/overview/1.png';
+import Adaptive from 'assets/img/overview/adaptive.png';
+import Animation from 'assets/img/overview/animation.png';
+import Themes from 'assets/img/overview/themes.png';
+import Database from 'assets/img/overview/database.png';
+import API from 'assets/img/overview/api.png';
+
 
 
 import InnerContent from 'layouts/innerContent';
@@ -51,59 +54,63 @@ export default function Overview() {
 						<Text color={textColor} fontWeight='800' fontSize={{ base: '28px', md: '48px' }} mb='20px'>
 							Stunning features. 
 						</Text>
-						<Text
-							fontWeight='700'
-							letterSpacing='2px'
-							bg='linear-gradient(135deg, #868CFF 0%, #4318FF 100%)'
-							bgClip='text'
-							fontSize='sm'
-							w='100%'
-							mb='10px'>
-							INTERFACE
-						</Text>
 					</Flex>
 				</Flex>
-				<Flex mb='50px' justify='center' w={{ base: '52%', md: '90%' }} flexWrap='wrap'>
+
+				<Flex mb='72px' justify='center' w={{ base: '72%', md: '100%' }} flexWrap='wrap'>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', md: '20px' }}
-						title='Zoon & Pan'
-						image={One}
+						title='Props Panel'
+						image={PropsPanel}
 					/>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', xl: '20px' }}
-						title='NFT Marketplace'
-						image={image1}
-						link='/'
+						title='Layer Panel'
+						image={LayerPanel}
 					/>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', md: '20px', xl: '0px' }}
-						title='Tables Page'
-						image={image2}
-						link='/'
-					/>
-					<PageCard
-						mb={{ base: '20px', md: '20px', lg: '0px' }}
-						me={{ base: '0px', md: '0px', xl: '20px' }}
-						title='Profile Overview'
-						image={image4}
-						link='/'
-					/>
-					<PageCard
-						mb={{ base: '20px', md: '0px' }}
-						me={{ base: '0px', md: '20px', lg: '20px' }}
-						title='Sign In Page'
-						image={image5}
-						link='/'
-					/>
-					<PageCard
-						title='RTL Page'
-						image={image6}
-						link='/'
+						title='Shortcuts'
+						image={Shortcuts}
 					/>
 				</Flex>
+
+				<Flex mb='72px' justify='center' w={{ base: '50%', md: '120%' }} flexWrap='wrap'>
+					<PageCard
+						mb='20px'
+						me={{ base: '0px', md: '20px' }}
+						title='Adaptive Design'
+						image={Adaptive}
+					/>
+					<PageCard
+						mb='20px'
+						me={{ base: '0px', xl: '20px' }}
+						title='Animation'
+						image={Animation}
+					/>
+					<PageCard
+						mb='20px'
+						me={{ base: '0px', md: '20px', xl: '0px' }}
+						title='Themes'
+						image={Themes}
+					/>
+					<PageCard
+						mb='20px'
+						me={{ base: '0px', md: '20px' }}
+						title='Database'
+						image={Database}
+					/>
+					<PageCard
+						mb='20px'
+						me={{ base: '0px', xl: '20px' }}
+						title='API'
+						image={API}
+					/>
+				</Flex>
+
 				<Link href='/'>
 					<Button h='50px' borderRadius='12px' variant='darkBrand' fontSize='sm'>
 						See More

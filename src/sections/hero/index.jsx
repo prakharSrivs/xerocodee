@@ -1,8 +1,6 @@
 import { Box, Button, Flex, Grid, Link, Icon, Image, Text, useColorModeValue } from '@chakra-ui/react';
 // Assets
-import heroImageDark from 'assets/img/hero/hero-image-dark.png';
 import heroImageLight from 'assets/img/hero/hero-image-light.png';
-import heroBgDark from 'assets/img/hero/heroBgDark.png';
 import heroBgLight from 'assets/img/hero/heroBgLight.png';
 import { JavascriptLogo, NextLogo, ReactLogo, TypescriptLogo, TailwindLogo } from 'components/icons/Icons';
 import { MdChevronRight } from 'react-icons/md';
@@ -12,8 +10,8 @@ import InnerContent from 'layouts/innerContent';
 import React from 'react';
 
 export default function Hero() {
-	const background = useColorModeValue(heroBgLight, heroBgDark);
-	const heroImage = useColorModeValue(heroImageLight, heroImageDark);
+	const background = useColorModeValue(heroBgLight);
+	const heroImage = useColorModeValue(heroImageLight);
 	// Chakra Color Mode
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.700', 'white');
