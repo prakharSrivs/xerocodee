@@ -4,21 +4,19 @@ import {
   Box,
   Flex,
   Icon,
-  Avatar,
   Text,
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
 
 // Assets
-import GitHubButton from "react-github-btn";
-import { IoLogoGithub } from "react-icons/io";
-import { FaDiscord } from "react-icons/fa";
+// import GitHubButton from "react-github-btn";
+// import { IoLogoGithub } from "react-icons/io";
+// import { FaDiscord } from "react-icons/fa";
 import { FigmaLogo } from "components/icons/Icons";
 
 // Custom components
 import Card from "components/card/Card";
-import avatar from "assets/img/numbers/Image-4.png";
 import InnerContent from "layouts/innerContent";
 import { HSeparator } from "components/separator/Separator";
 
