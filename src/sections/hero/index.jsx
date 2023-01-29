@@ -51,8 +51,7 @@ export default function Hero() {
 							fontSize='lg'
 							w={{ base: '100%', lg: '55%', xl: '45%' }}
 							mb='30px'>
-							With &nbsp; <b>XeroCodee</b>,&nbsp; you can create web pages, alter them, and even link your current database without writing code. 
-							You can even integrate APIs and do a lot more.
+							Build websites and edit them without writing any code! You can do a lot more, including the integration of **APIs** and even link it to your current **Database**.
 						</Text>
 						<Flex align='center' mb='30px'>
 							<Link href='/'>
