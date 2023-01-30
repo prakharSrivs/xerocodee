@@ -135,7 +135,7 @@ export default function Footer() {
         <Flex
           direction={{ base: "column", md: "row" }}
           w={{ base: "100%", md: "100%", lg: "100%", xl: "690px" }}>
-          <Flex
+          {/* <Flex
             direction='column'
             me={{ base: "20px", md: "60px", lg: "14px", xl: "60px" }}
             mt={{ base: "30px", md: "40px", lg: "0px" }}>
@@ -174,13 +174,13 @@ export default function Footer() {
               Company
             </Link>
             <Link
-              href='/'
+              href='https://blog.xerocodee.com/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'>
               Blog
             </Link>
-          </Flex>
+          </Flex> */}
           <Flex
             direction='column'
             me={{ base: "20px", md: "80px", lg: "50px", xl: "60px" }}
@@ -193,7 +193,7 @@ export default function Footer() {
               Help & Support
             </Text>
             <Link
-              href='/'
+              href='https://docs.xerocodee.com/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'
@@ -201,7 +201,7 @@ export default function Footer() {
               Documentation
             </Link>
             <Link
-              href='mailto:hello@simmmple.com'
+              href='/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'
@@ -216,13 +216,6 @@ export default function Footer() {
               mb='20px'>
               Support
             </Link>
-            <Link
-              href='/'
-              fontSize='md'
-              color={textColorSecondary}
-              fontWeight='400'>
-              Roadmap
-            </Link>
           </Flex>
           <Flex
             direction='column'
@@ -236,7 +229,7 @@ export default function Footer() {
               Social Media
             </Text>
             <Link
-              href='/'
+              href='https://github.com/xerocodee'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'
@@ -252,19 +245,19 @@ export default function Footer() {
               Twitter
             </Link>
             <Link
-              href='/'
+              href='https://www.linkedin.com/company/xerocodee/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'
               mb='20px'>
-              Instagram
+              LinkedIn
             </Link>
             <Link
-              href='/'
+              href='https://blog.xerocodee.com/'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'>
-              Facebook
+              Blog
             </Link>
           </Flex>
           <Flex direction='column' mt={{ base: "30px", md: "40px", lg: "0px" }}>
@@ -292,19 +285,12 @@ export default function Footer() {
               Privacy Policy
             </Link>
             <Link
-              href='/'
+              href='https://github.com/xerocodee/xerocodee.github.io/blob/master/LICENSE'
               fontSize='md'
               color={textColorSecondary}
               fontWeight='400'
               mb='20px'>
               License
-            </Link>
-            <Link
-              href='/'
-              fontSize='md'
-              color={textColorSecondary}
-              fontWeight='400'>
-              EULA
             </Link>
           </Flex>
         </Flex>

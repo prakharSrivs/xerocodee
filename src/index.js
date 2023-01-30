@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "assets/css/App.css";
+import "./assets/css/App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import AdminLayout from "layouts";
 // Chakra imports
