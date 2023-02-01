@@ -51,7 +51,7 @@ export default function Hero() {
 							fontSize='lg'
 							w={{ base: '100%', lg: '55%', xl: '45%' }}
 							mb='30px'>
-							Build websites and edit them without writing any code! You can do a lot more, including the integration of **APIs** and even link it to your current **Database**.
+							Build websites and edit them without writing any code! You can do a lot more, including the integration of <b>APIs</b>  and even link it to your current <b>Database</b>.
 						</Text>
 						<Flex align='center' mb='30px'>
 							<Link href='/'>
@@ -64,7 +64,7 @@ export default function Hero() {
 									me={{ base: '20px', md: '30px' }}
 									w='180px'
 									h='54px'>
-									Get started
+									10x Faster
 									<Icon as={MdChevronRight} color='white' h='16px' w='16px' />
 								</Button>
 							</Link>

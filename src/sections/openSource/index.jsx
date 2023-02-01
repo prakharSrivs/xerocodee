@@ -17,6 +17,7 @@ import {
 import imageDark from "assets/img/openSource/section4-dark.png";
 import imageLight from "assets/img/openSource/section4-light.png";
 import { MdChevronRight } from "react-icons/md";
+import Card from "components/card/Card";
 
 // Custom components
 import InnerContent from "layouts/innerContent";
@@ -54,7 +55,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                Connect Database & API
+                Build complex applications
               </Text>
               <Text
                 fontWeight='800'
@@ -63,15 +64,76 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                Connect database in seconds
+                10x Faster
               </Text>
-              <Text
-                color={textColorSecondary}
-                fontSize='lg'
-                w={{ base: "90%", md: "100%" }}
-                mb='30px'>
-                Connect Database & API
-              </Text>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                  <Box me='auto'>
+                    <Text
+                      fontWeight='700'
+                      color={textColorSecondary}
+                      fontSize={{ base: "sm", md: "sm" }}
+                      lineHeight={{ base: "100%", md: "100%" }}
+                      letterSpacing='2.48px'>
+                      1: Use Webflow as the front-end for your web app.
+                    </Text>
+                  </Box>
+              </Card>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                  <Box me='auto'>
+                    <Text
+                      fontWeight='700'
+                      color={textColorSecondary}
+                      fontSize={{ base: "sm", md: "sm" }}
+                      lineHeight={{ base: "100%", md: "100%" }}
+                      letterSpacing='2.48px'>
+                     2: Integrate your website with any REST API.
+                    </Text>
+                  </Box>
+              </Card>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                  <Box me='auto'>
+                    <Text
+                      fontWeight='700'
+                      color={textColorSecondary}
+                      fontSize={{ base: "sm", md: "sm" }}
+                      lineHeight={{ base: "100%", md: "100%" }}
+                      letterSpacing='2.48px'>
+                      3: Build login functionality and Stripe payment flows.
+                    </Text>
+                  </Box>
+              </Card>
+                            <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                  <Box me='auto'>
+                    <Text
+                      fontWeight='700'
+                      color={textColorSecondary}
+                      fontSize={{ base: "sm", md: "sm" }}
+                      lineHeight={{ base: "100%", md: "100%" }}
+                      letterSpacing='2.48px'>
+                      4: Continue hosting your project via Webflow.
+                    </Text>
+                  </Box>
+              </Card>
               <Flex align='center'>
                 <Link
                   href='/'>
