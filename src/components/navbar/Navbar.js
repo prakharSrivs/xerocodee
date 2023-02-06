@@ -124,27 +124,27 @@ export default function AdminNavbar(props) {
             fontWeight='700'
             me='30px'
             my='auto'>
-            FEATURES
+            Features
           </Link>
           <Link
             display={{ base: "none", lg: "block" }}
-            href='/'
+            href='https://blog.xerocodee.com/'
             color={textColor}
             fontSize='sm'
             fontWeight='700'
             me='30px'
             my='auto'>
-            RESOURCES
+            Blog
           </Link>
           <Link
             display={{ base: "none", lg: "block" }}
-            href='/'
+            href='https://docs.xerocodee.com/'
             color={textColor}
             fontSize='sm'
             fontWeight='500'
             me='30px'
             my='auto'>
-            PRICES
+            Doc
           </Link>
           <VSeparator
             me='14px'

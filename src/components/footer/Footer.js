@@ -260,6 +260,42 @@ export default function Footer() {
               Blog
             </Link>
           </Flex>
+                    <Flex
+            direction='column'
+            me={{ base: "20px", md: "80px", lg: "50px", xl: "60px" }}
+            mt={{ base: "30px", md: "40px", lg: "0px" }}>
+            <Text
+              mb='20px'
+              fontSize='lg'
+              color={textFooter}
+              fontWeight='700'>
+              Community
+            </Text>
+            <Link
+              href='https://discord.gg/FTf9VD7pMB'
+              fontSize='md'
+              color={textColorSecondary}
+              fontWeight='400'
+              mb='20px'>
+              Discord
+            </Link>
+            <Link
+              href='https://join.slack.com/t/xerocodee/shared_invite/zt-1m8t478v7-p~XGsbw8t96tVhDkqQqPwg'
+              fontSize='md'
+              color={textColorSecondary}
+              fontWeight='400'
+              mb='20px'>
+              Slack
+            </Link>
+            <Link
+              href='https://github.com/orgs/xerocodee/discussions'
+              fontSize='md'
+              color={textColorSecondary}
+              fontWeight='400'
+              mb='20px'>
+              GitHub  Discussions
+            </Link>
+          </Flex>
           <Flex direction='column' mt={{ base: "30px", md: "40px", lg: "0px" }}>
             <Text
               mb='20px'
