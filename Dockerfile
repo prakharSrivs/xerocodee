@@ -1,12 +1,16 @@
-FROM node:10.4.3
-WORKDIR /usr/src/app 
-COPY package*.json ./
-ADD package.json /usr/src/app/package.json
+# stage1 - build react app first 
+FROM node:12.16.1-alpine3.9 as build
+WORKDIR /app
+ENV PATH /app/node_modules/.bin:$PATH
+COPY ./package.json /app/
 RUN npm install
-COPY . .
-EXPOSE 3000 
-CMD ["npm ","start"];
+COPY . /app
+RUN npm build
 
-
-FROM nginx:1.19.0
-COPY build/ /usr/share/nginx/html
+# stage 2 - build the final image and copy the react build files
+FROM nginx:1.17.8-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

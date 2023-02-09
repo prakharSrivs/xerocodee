@@ -3,7 +3,6 @@ import React from 'react';
 import { Flex } from '@chakra-ui/react';
 // Custom components
 import Hero from 'sections/hero';
-// import Tools from 'sections/tools';
 import Version from 'sections/version';
 import GetStarted from 'sections/started';
 import OpenSource from 'sections/openSource';
@@ -18,7 +17,6 @@ export default function Default() {
 			<GetStarted />
 			<OpenSource />
 			<Numbers />
-			{/* <Tools /> */}
 		</Flex>
 	);
 }

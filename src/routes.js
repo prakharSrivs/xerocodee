@@ -3,13 +3,11 @@ import React from "react";
 import { Icon } from "@chakra-ui/react";
 import { MdHome } from "react-icons/md";
 
-// Admin Imports
 import Free from "views";
 
 const routes = [
-  // --- Dashboards ---
   {
-    name: "Horizon UI",
+    name: "XeroCodee",
     layout: "/ ",
     path: "/",
     component: Free,
