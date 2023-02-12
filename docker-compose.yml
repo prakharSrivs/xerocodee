@@ -1,8 +1,0 @@
-version: '3.8'
-services:
-  beanstalk-node:
-    env_file:
-      - .env
-    image: '847641721687.dkr.ecr.ap-south-1.amazonaws.com/feetwings-doctor-panel'
-    ports:
-      - '80:8080'
