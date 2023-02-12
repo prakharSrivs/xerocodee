@@ -1,6 +1,5 @@
 ![xerocodee](https://raw.githubusercontent.com/xerocodee/.github/master/profile/images/social-cover.png)
 
-
 ## XeroCodee 👋 - Readable & Production Ready Codee
 
 <img src="https://raw.githubusercontent.com/xerocodee/.github/master/profile/images/xerocodee-open-source.svg" title="XeroCodee">
@@ -60,3 +59,13 @@ npm install
 ```bash
 npm start
 ```
+---
+
+# Contribute
+
+We welcome contributions in our community.<br>
+Before contributing,see <a href="https://github.com/xerocodee/xerocodee.github.io/blob/main/CONTRIBUTING.md">Contribution guide</a> for more information.
+
+# License
+
+This Community is <a href="https://github.com/xerocodee/xerocodee.github.io/blob/master/LICENSE">Licensed</a> under Mozilla Public License Version 2.0
