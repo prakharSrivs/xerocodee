@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xerocodee-web-deploy
+  labels:
+    app: xerocodee-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xerocodee-web
+  template:
+    metadata:
+      labels:
+        app: xerocodee-web
+    spec:
+      containers:
+      - name: xerocodee-web
+        image: a1s1cmd01/xerocodee-web:1.0.0
+        ports:
+        - containerPort: 3000
+---
+# Commenting stuff because I have added loadbalancer service
+apiVersion: v1
+kind: Service
+metadata:
+  name: xerocodee-web-service
+spec:
+  selector:
+    app: xerocodee-web
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
