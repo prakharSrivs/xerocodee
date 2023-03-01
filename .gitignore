@@ -26,3 +26,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /actions-runner
+
+# Local Netlify folder
+.netlify
