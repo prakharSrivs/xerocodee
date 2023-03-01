@@ -23,7 +23,6 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "framer-motion": "^4.1.17",
     "lint-staged": "^13.1.0",
-    "netlify-purge-cloudflare-on-deploy": "^1.2.0",
     "react": "17.0.2",
     "react-build-sitemap": "^0.2.2",
     "react-custom-scrollbars-2": "^4.2.1",
