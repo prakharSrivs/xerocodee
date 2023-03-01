@@ -51,7 +51,7 @@ export default function Hero() {
 							fontSize='lg'
 							w={{ base: '100%', lg: '55%', xl: '45%' }}
 							mb='30px'>
-							Build websites and edit them without writing any code! You can do a lot more, including the integration of <b>APIs</b>  and even link it to your current <b>Database</b>.
+							With the help of the top <br>"no-code"</br> software development platform, <br>XeroCodee</br>, anyone can create, publish, and maintain their own software applications, tech products, or tools to address business issues.
 						</Text>
 						<Flex align='center' mb='30px'>
 							<Link href='/'>
