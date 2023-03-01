@@ -274,7 +274,7 @@ export default function AdminNavbar(props) {
           </Menu>
 
           <Link
-            href='/'
+            href='https://builder-liard.vercel.app/'
             display={{ base: "none", lg: "block" }}>
             <Button
               variant='no-hover'
@@ -285,7 +285,7 @@ export default function AdminNavbar(props) {
               borderRadius='12px'
               bg='transparent'
               my='auto'>
-              LOGIN
+              DASHBOARD
             </Button>
           </Link>
         </Flex>
