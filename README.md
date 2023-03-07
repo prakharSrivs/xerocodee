@@ -61,6 +61,12 @@ npm start
 ```
 ---
 
+### Local Env
+
+Step 1: docker build -t xerocodee-builder .
+
+Step 2: docker run -p 3000:3000 xerocodee-builder
+
 # Contribute
 
 We welcome contributions in our community.<br>
