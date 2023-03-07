@@ -82,7 +82,7 @@ jobs :
       - name: setup git config
         run: /
           git config --global user.email "aryasoni98@gmail.com"
-          git config --global user.name "xerocodee"
+          git config --global user.name "aryasoni98"
           echo ${{ github.sha }}
           sed -i "s#${{ github.actor }}.*#${{ github.actor }}/xerocodee-web:${{ github.sha }}#g" deployment.yaml
           git add - A
