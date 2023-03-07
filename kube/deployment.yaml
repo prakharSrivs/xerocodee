@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: xerocodee-web
-        image: a1s1cmd01/xerocodee-web
+        image: xerocodee/xerocodee-web
         imagePullPolicy: Always
         ports:
         - containerPort: 80
