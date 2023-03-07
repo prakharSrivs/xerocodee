@@ -1,9 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xerocodee-web-deploy
-  labels:
-    app: xerocodee-web
+  name: xerocodee-web
 spec:
   replicas: 1
   selector:
@@ -15,8 +13,8 @@ spec:
         app: xerocodee-web
     spec:
       containers:
-      - name: xerocodee-web
-        image: xerocodee/xerocodee-web:commitId
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        - name: xerocodee-web
+          image: xerocodee/xerocodee.github.io:commitId
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
