@@ -68,7 +68,7 @@ jobs :
 
       - name: Image digest
         run: exhp ${{ steps.docker_build.outputs.digest }}
-      
+  
   update-mainfest-stage:
     runs-on: ubuntu-latest
     needs: build-and-push-docker-image
@@ -77,7 +77,7 @@ jobs :
         with:
           repository: xerocodee/xerocodee.github.io
           ref: 'master'
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.G_TOKEN }}
 
       - name: setup git config
         run: /
