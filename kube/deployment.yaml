@@ -16,19 +16,7 @@ spec:
     spec:
       containers:
       - name: xerocodee-web
-        image: a1s1cmd01/xerocodee-web:1.0.0
+        image: a1s1cmd01/xerocodee-web
+        imagePullPolicy: Always
         ports:
-        - containerPort: 3000
----
-# Commenting stuff because I have added loadbalancer service
-apiVersion: v1
-kind: Service
-metadata:
-  name: xerocodee-web-service
-spec:
-  selector:
-    app: xerocodee-web
-  ports:
-    - protocol: TCP
-      port: 3000
-      targetPort: 3000
+        - containerPort: 80
