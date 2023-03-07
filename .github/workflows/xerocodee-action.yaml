@@ -82,7 +82,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: imrishav/gitops-infra
+          repository: xerocodee/xerocodee.github.io
           ref: 'master'
           token: ${{ secrets.G_TOKEN }}
       - name: setup git config
@@ -90,7 +90,7 @@ jobs:
           git config --global user.email "aryasoni98@gmail.com"
           git config --global user.name "aryasoni98"
           echo ${{ github.sha }}
-          sed -i "s#${{ github.actor }}.*#${{ github.actor }}/xerocodee-web:${{ github.sha }}#g" deployment.yaml
+          sed -i "s#${{ github.actor }}.*#${{ github.actor }}/xerocodee.github.io:${{ github.sha }}#g" deployment.yaml
           git add -A
           git commit -am "Update image for - ${{ github.sha }}"
       - run: echo ${{ github }}
