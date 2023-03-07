@@ -59,7 +59,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GH_TOKEN }}
+          password: ${{ secrets.G_TOKEN }}
 
       - name: Build image and push to Docker Hub and GitHub Container Registry
         uses: docker/build-push-action@v2
@@ -68,12 +68,10 @@ jobs:
           context: ./
           # Note: tags has to be all lower-case
           tags: |
-            xerocodee/xerocodee-web:${{ github.sha }} 
-            xerocodee/xerocodee-web:latest
-          
-          # ghcr.io/xerocodee/xerocodee-web:${{ github.sha }}
+            xerocodee/xerocodee-web:${{ github.sha }}           
+            ghcr.io/xerocodee/xerocodee-web:${{ github.sha }}
           # build on feature branches, push only on main branch
-          
+
           push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
