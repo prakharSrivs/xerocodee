@@ -1,24 +1,27 @@
-name: Build Step 
+name: Build Step
 
 on:
-  push: 
+  push:
     branches: ['master']
+#   pull_request:
+#     branches: [ "master" ]
 
-jobs : 
+jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [14.20.0]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci 
+      - run: npm ci
       - run: npm run build --if-present
 
   test-stage:
@@ -27,20 +30,23 @@ jobs :
     steps:
       - name: Running Tests
         uses: actions/checkout@v3
-      - run: echo "XeroCodee CI"
+      - run: echo "xerocodee-web"
 
-  build-and-push-docker-iamge:
-    name: Build Docekr iamge and push to repository
+  build-and-push-docker-image:
+    name: Build Docker image and push to repositories
+    # run only when code is compiling and tests are passing
     runs-on: ubuntu-latest
     needs: ['build', 'test-stage']
 
+    # steps to perform in job
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Step up Docker Build
-        id: build
-        uses: docker/steup-build-action@v2
+      # setup Docker buld action
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v2
 
       - name: Login to DockerHub
         uses: docker/login-action@v2
@@ -50,42 +56,42 @@ jobs :
 
       - name: Login to Github Packages
         uses: docker/login-action@v2
-        with: 
+        with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.G_TOKEN }}
 
-      - name: Build image and push to Docker Hub adn Github container registry
-        uses: docker/build-push-actions@v2
-        with: 
-
+      - name: Build image and push to Docker Hub and GitHub Container Registry
+        uses: docker/build-push-action@v2
+        with:
+          # relative path to the place where source code with Dockerfile is located
           context: ./
-          tags: /
-            xerocodee/xerocodee-web:${{ github.sha }}
-            ghcr.io/xerocdee/xerocodee-web:${{ github.sha }}
-
+          # Note: tags has to be all lower-case
+          tags: |
+            xerocodee/xerocodee.github.io:${{ github.sha }} 
+            ghcr.io/xerocodee/xerocodee.github.io:${{ github.sha }}
+          # build on feature branches, push only on main branch
           push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
-        run: exhp ${{ steps.docker_build.outputs.digest }}
-  
-  update-mainfest-stage:
+        run: echo ${{ steps.docker_build.outputs.digest }}
+
+  update-manifest-stage:
     runs-on: ubuntu-latest
     needs: ['build-and-push-docker-image']
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: xerocodee/xerocodee.github.io
+          repository: imrishav/gitops-infra
           ref: 'master'
           token: ${{ secrets.G_TOKEN }}
-
       - name: setup git config
-        run: /
+        run: |
           git config --global user.email "aryasoni98@gmail.com"
           git config --global user.name "aryasoni98"
           echo ${{ github.sha }}
           sed -i "s#${{ github.actor }}.*#${{ github.actor }}/xerocodee-web:${{ github.sha }}#g" deployment.yaml
-          git add - A
+          git add -A
           git commit -am "Update image for - ${{ github.sha }}"
       - run: echo ${{ github }}
       - run: git push origin master
