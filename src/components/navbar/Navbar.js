@@ -6,8 +6,8 @@ import {
   Link,
   Menu,
   MenuButton,
-  MenuItem,
-  MenuList,
+  // MenuItem,
+  // MenuList,
   Text,
   useColorMode,
   useColorModeValue,
@@ -44,11 +44,11 @@ export default function AdminNavbar(props) {
   let secondaryMargin = "90px";
   let paddingX = "15px";
   let gap = "0px";
-  let menuBg = useColorModeValue("white", "navy.800");
-  const shadow = useColorModeValue(
-    "14px 17px 40px 4px rgba(112, 144, 176, 0.18)",
-    "14px 17px 40px 4px rgba(112, 144, 176, 0.06)"
-  );
+  // let menuBg = useColorModeValue("white", "navy.800");
+  // const shadow = useColorModeValue(
+  //   "14px 17px 40px 4px rgba(112, 144, 176, 0.18)",
+  //   "14px 17px 40px 4px rgba(112, 144, 176, 0.06)"
+  // );
   const changeNavbar = () => {
     if (window.scrollY > 1) {
       setScrolled(true);
@@ -199,7 +199,7 @@ export default function AdminNavbar(props) {
                 _hover={{ cursor: "pointer" }}
               />
             </MenuButton>
-            <MenuList
+            {/* <MenuList
               boxShadow={shadow}
               p='0px'
               mt='10px'
@@ -265,12 +265,12 @@ export default function AdminNavbar(props) {
                       color={textColor}
                       borderRadius='12px'
                       bg='transparent'>
-                      DASHBOARD
+                      LOGIN
                     </Button>
                   </Link>
                 </MenuItem>
               </Flex>
-            </MenuList>
+            </MenuList> */}
           </Menu>
 
           <Link
@@ -285,7 +285,7 @@ export default function AdminNavbar(props) {
               borderRadius='12px'
               bg='transparent'
               my='auto'>
-              LOGIN
+              DASHBOARD
             </Button>
           </Link>
         </Flex>
