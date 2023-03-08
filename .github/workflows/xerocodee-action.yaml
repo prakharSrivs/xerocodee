@@ -60,8 +60,9 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          tags: ghcr.io/xerocodee/xerocodee.github.io:${{ github.sha }}
-
+          tags: |
+            xerocodee/xerocodee-web:${{ github.sha }}           
+            ghcr.io/xerocodee/xerocodee.github.io:${{ github.sha }}
           push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
