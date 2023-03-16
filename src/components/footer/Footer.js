@@ -14,7 +14,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import Logo from "assets/img/logo/Logo.png";
+import Logo from "assets/img/logo/logo.png";
 import Bg from "assets/img/layout/Background.png";
 import { FaDiscord } from "react-icons/fa";
 import { HSeparator } from "components/separator/Separator";

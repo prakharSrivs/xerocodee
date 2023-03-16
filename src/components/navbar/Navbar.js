@@ -241,7 +241,7 @@ export default function AdminNavbar(props) {
           </Menu>
 
           <Link
-            href='https://builder-liard.vercel.app/'
+            href='https://oauth.xerocodee.com/'
             display={{ base: "none", lg: "block" }}>
             <Button
               variant='no-hover'
@@ -252,7 +252,7 @@ export default function AdminNavbar(props) {
               borderRadius='12px'
               bg='transparent'
               my='auto'>
-              DASHBOARD
+              LOGIN
             </Button>
           </Link>
         </Flex>
