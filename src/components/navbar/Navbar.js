@@ -15,9 +15,9 @@ import {
 import { VSeparator } from "components/separator/Separator";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
-import { IoLogoGithub, IoMdMoon, IoMdSunny } from "react-icons/io";
-import { IoMenuOutline } from "react-icons/io5";
-import Logo from "assets/img/logo/Logo.png";
+import { IoLogoGithub, IoLogoSlack, IoMdMoon, IoMdSunny } from "react-icons/io";
+import { IoLogoDiscord, IoMenuOutline } from "react-icons/io5";
+import Logo from "assets/img/logo/logo.png";
 
 
 export default function AdminNavbar(props) {
@@ -128,14 +128,19 @@ export default function AdminNavbar(props) {
           </Link>
           <Link
             display={{ base: "none", lg: "block" }}
-            href='https://blog.xerocodee.com/'
+            href='/'
             color={textColor}
             fontSize='sm'
             fontWeight='700'
             me='30px'
             my='auto'>
-            Blog
+            Teams
           </Link>
+          <VSeparator
+            me='14px'
+            bg={textColor}
+            display={{ base: "none", lg: "block" }}
+          />
           <Link
             display={{ base: "none", lg: "block" }}
             href='https://docs.xerocodee.com/'
@@ -144,13 +149,47 @@ export default function AdminNavbar(props) {
             fontWeight='500'
             me='30px'
             my='auto'>
-            Doc
+            Docs
+          </Link>
+          <Link
+            display={{ base: "none", lg: "block" }}
+            href='https://blog.xerocodee.com/'
+            color={textColor}
+            fontSize='sm'
+            fontWeight='500'
+            me='30px'
+            my='auto'>
+            Blog
           </Link>
           <VSeparator
             me='14px'
             bg={textColor}
             display={{ base: "none", lg: "block" }}
           />
+          <Link
+            my='auto'
+            href='https://discord.gg/PzyuFAeeWa'>
+            <Button
+              variant='no-hover'
+              h='max-content'
+              w='max-content'
+              bg='transparent'
+              my='auto'>
+              <Icon as={IoLogoDiscord} color={textColor} w='18px' h='18px' />
+            </Button>
+          </Link>
+          <Link
+            my='auto'
+            href='https://join.slack.com/t/xerocodee/shared_invite/zt-1m8t478v7-p~XGsbw8t96tVhDkqQqPwg'>
+            <Button
+              variant='no-hover'
+              h='max-content'
+              w='max-content'
+              bg='transparent'
+              my='auto'>
+              <Icon as={IoLogoSlack} color={textColor} w='18px' h='18px' />
+            </Button>
+          </Link>
           <Link
             my='auto'
             href='https://github.com/xerocodee'>
@@ -199,78 +238,6 @@ export default function AdminNavbar(props) {
                 _hover={{ cursor: "pointer" }}
               />
             </MenuButton>
-            {/* <MenuList
-              boxShadow={shadow}
-              p='0px'
-              mt='10px'
-              borderRadius='20px'
-              bg={menuBg}
-              border='none'>
-              <Flex flexDirection='column' p='10px'>
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
-                  borderRadius='8px'
-                  px='14px'>
-                  <Link
-                    href='/'
-                    color={textColor}
-                    fontSize='sm'
-                    fontWeight='500'
-                    me='30px'
-                    my='auto'>
-                    FEATURES
-                  </Link>
-                </MenuItem>
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
-                  borderRadius='8px'
-                  px='14px'>
-                  <Link
-                    href='/'
-                    color={textColor}
-                    fontSize='sm'
-                    fontWeight='500'
-                    me='30px'
-                    my='auto'>
-                    RESOURCES
-                  </Link>
-                </MenuItem>
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
-                  color='red.400'
-                  borderRadius='8px'>
-                  <Link
-                    href='/'
-                    color={textColor}
-                    fontSize='sm'
-                    fontWeight='500'
-                    me='30px'
-                    my='auto'>
-                    PRICES
-                  </Link>
-                </MenuItem>
-                <MenuItem
-                  _hover={{ bg: "none" }}
-                  _focus={{ bg: "none" }}
-                  color='red.400'
-                  borderRadius='8px'>
-                  <Link href='https://github.com/xerocodee'>
-                    <Button
-                      variant='no-hover'
-                      border='1px solid'
-                      borderColor={textColor}
-                      color={textColor}
-                      borderRadius='12px'
-                      bg='transparent'>
-                      LOGIN
-                    </Button>
-                  </Link>
-                </MenuItem>
-              </Flex>
-            </MenuList> */}
           </Menu>
 
           <Link
