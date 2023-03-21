@@ -1,10 +1,11 @@
 import React from 'react';
 // Chakra imports
 import { Box, Flex, Button, Icon, Grid, Image, Text, Link, useColorModeValue } from '@chakra-ui/react';
+import Typescript from 'assets/img/started/Icon.png';
 
 // Assets
-import imageDark from 'assets/img/started/section4-dark.png';
-import imageLight from 'assets/img/started/section4-light.png';
+import imageDark from 'assets/img/started/section-4.png';
+import imageLight from 'assets/img/started/section-4.png';
 import { MdChevronRight } from 'react-icons/md';
 
 // Custom components
@@ -37,7 +38,7 @@ export default function GetStarted() {
 								fontSize='sm'
 								w='100%'
 								mb='10px'>
-								Drag n Drop 
+								Deploy Apps
 							</Text>
 							<Text
 								fontWeight='800'
@@ -46,31 +47,53 @@ export default function GetStarted() {
 								lineHeight={{ base: '34px', md: '60px' }}
 								mb='20px'
 								maxW={{ base: '80%', md: 'unset' }}>
-								Launch a website in seconds.
+								Save 10000s of expensive coder hours
 							</Text>
 							<Text color={textColorSecondary} fontSize='lg' w={{ base: '90%', md: '100%' }} mb='30px'>
-								Save time by using XeroCodee to create a revenue-ready website in 30 seconds.
-								With just one login, get access to all the tools you need to grow your business.							
+								<b>no-code</b> cloud management platform that makes it easier to <b>deploy</b>, <b>control</b>, and <b>scale virtual machines</b>, <b>clusters</b>, and applications.
+								Utilize a singular interface to access all cloud service providers. To expand the workloads, take advantage of <b>seamless</b> network connectivity.							
 							</Text>
 							<Flex align='center' mb='30px'>
 								<Flex me={{ base: '20px', md: '50px' }} direction='column'>
+									{/* <Text
+										color={textColor}
+										fontWeight='800'
+										fontSize={{ base: '30px', md: '38px' }}
+										lineHeight='100%'
+										mb='10px'>
+										3+
+									</Text> */}
+									<Image
+										src={Typescript}
+										w={{ base: '30px', md: '350px' }}
+										h={{ base: '30px', md: '40px' }}
+									/>
+									{/* <Text
+										color={textColorSecondary}
+										fontWeight='700'
+										fontSize={{ base: 'xs', md: 'sm' }}
+										letterSpacing='2px'>
+										Cloud Connect
+									</Text> */}
+								</Flex>
+								{/* <Flex me='50px' direction='column'>
 									<Text
 										color={textColor}
 										fontWeight='800'
 										fontSize={{ base: '30px', md: '38px' }}
 										lineHeight='100%'
 										mb='10px'>
-										100+
+										03+
 									</Text>
 									<Text
 										color={textColorSecondary}
 										fontWeight='700'
 										fontSize={{ base: 'xs', md: 'sm' }}
 										letterSpacing='2px'>
-										COMPONENTS
+										THEMES
 									</Text>
-								</Flex>
-								<Flex me='50px' direction='column'>
+								</Flex> */}
+								{/* <Flex me='50px' direction='column'>
 									<Text
 										color={textColor}
 										fontWeight='800'
@@ -86,7 +109,7 @@ export default function GetStarted() {
 										letterSpacing='2px'>
 										THEMES
 									</Text>
-								</Flex>
+								</Flex> */}
 							</Flex>
 							<Flex align='center'>
 								<Link href='/'>

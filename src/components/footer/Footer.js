@@ -127,9 +127,8 @@ export default function Footer() {
             fontSize='md'
             color={textColorSecondary}
             fontWeight='400'>
-            There is XEROCODEE if there is React/Typescript and a WebApp or MobileApp.
-            If you only give it a try, you won't want to stop using it.
-            The more websites you make, the more time you'll save.
+            You get just what you need to run your cloud workloads--no more, no less. 
+            Deploy from our single pane of glass, manage them with ease and scale up as fast as your workload grows.
           </Text>
         </Box>
         <Flex
@@ -334,7 +333,7 @@ export default function Footer() {
       <HSeparator mt='75px' mb='50px' maxW='1170px' mx='auto' />
       <Flex mx='auto'>
         <Text me='4px' textColor={textColorSecondary}>
-          © 2023 &nbsp; XeroCodee &nbsp; - &nbsp; Readable & Production Ready Code. &nbsp; All Rights Reserved.
+          © 2023 &nbsp; XeroCodee &nbsp; - &nbsp; DevOps Automation Platform. &nbsp; All Rights Reserved.
         </Text>
       </Flex>
     </Flex>

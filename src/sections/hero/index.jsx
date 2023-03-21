@@ -1,9 +1,11 @@
 import { Box, Button, Flex, Grid, Link, Icon, Image, Text, useColorModeValue } from '@chakra-ui/react';
+
 // Assets
-import heroImageLight from 'assets/img/hero/hero-image-light.png';
+import heroImageLight from 'assets/img/hero/hero-image-light-1.png';
 import heroBgLight from 'assets/img/hero/heroBgLight.png';
-import { JavascriptLogo, NextLogo, ReactLogo, TypescriptLogo, TailwindLogo } from 'components/icons/Icons';
+// import { JavascriptLogo, NextLogo, ReactLogo, TypescriptLogo, TailwindLogo } from 'components/icons/Icons';
 import { MdChevronRight } from 'react-icons/md';
+
 // Custom components
 import { VSeparator } from 'components/separator/Separator';
 import InnerContent from 'layouts/innerContent';
@@ -12,6 +14,7 @@ import React from 'react';
 export default function Hero() {
 	const background = useColorModeValue(heroBgLight);
 	const heroImage = useColorModeValue(heroImageLight);
+	
 	// Chakra Color Mode
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const textColorSecondary = useColorModeValue('secondaryGray.700', 'white');
@@ -39,11 +42,11 @@ export default function Hero() {
 							color={textColor}
 							fontSize={{ base: '26px', md: '38px', xl: '46px' }}
 							mb='30px'
-							fontWeight='600'>
+							fontWeight='900'>
 							XeroCodee
 							<br />
-							<Text as='span' fontWeight='800'>
-								.drag .drop .publish
+							<Text as='span' fontWeight='600'>
+								deploys .manages .scales
 							</Text>
 						</Text>
 						<Text
@@ -51,8 +54,7 @@ export default function Hero() {
 							fontSize='lg'
 							w={{ base: '100%', lg: '55%', xl: '45%' }}
 							mb='30px'>
-							With the help of the top "no-code" software development platform. XeroCodee, anyone can create, publish, and maintain their own software applications, tech products, or tools to address business issues.
-						</Text>
+								You get just what you need to run your cloud workloads<b>--no more</b>, <b>no less</b>. Deploy from our single pane of glass, <b>manage</b> them with ease and <b>scale up</b> as fast as your workload grows						</Text>
 						<Flex align='center' mb='30px'>
 							<Link href='/'>
 								<Button
@@ -69,7 +71,7 @@ export default function Hero() {
 								</Button>
 							</Link>
 
-							<Icon
+							{/* <Icon
 								as={JavascriptLogo}
 								color={textColor}
 								w='26px'
@@ -102,7 +104,7 @@ export default function Hero() {
 								color={textColor}
 								w='39px'
 								h='23px' 
-							/>
+							/> */}
 						</Flex>
 						<Flex align='center'>
 							<Text
