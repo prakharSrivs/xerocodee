@@ -53,7 +53,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                BENEFITS XEROCODEE
+                Enterprise Scale
               </Text>
               <Text
                 fontWeight='800'
@@ -62,9 +62,9 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                Advantages Low-Code Development Tools
+                Infrastructure Automation & Compliance
               </Text>
-              <Text
+              {/* <Text
                 color={textColorSecondary}
                 fontSize='md'
                 w='100%'
@@ -73,7 +73,7 @@ export default function GetStarted() {
                 Instead of spending many hours hard coding everything,
                 low-code development allows you to construct, update, and test websites or web apps using visual tools.
                 Low-code development platforms enable developers of various skill levels to create apps in as little time as feasible.
-              </Text>
+              </Text> */}
               {/* <Flex alignItems='center'>
                 <Avatar h='48px' w='48px' me='20px' src={avatar} />
                 <Box>
@@ -128,10 +128,10 @@ export default function GetStarted() {
                       fontWeight='800'
                       mb='10px'
                       color={textColor}
-                      fontSize={{ base: "22px", md: "34px" }}
+                      fontSize={{ base: "22px", md: "21px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      50+
+                      Achieve and Maintain a Desired State
                     </Text>
                     <Text
                       fontWeight='700'
@@ -139,7 +139,7 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      Modern Themes
+                        Manage & automate more infrastructure & complex workflows 
                     </Text>
                   </Box>
                 </Flex>
@@ -160,17 +160,17 @@ export default function GetStarted() {
                     w={{ base: "50px", md: "74px" }}
                     h={{ base: "50px", md: "74px" }}
                     minW={{ base: "50px", md: "74px" }}>
-                    <Icon as={FigmaLogo} w='17px' h='26px' color='white' />
+                    {/* <Icon as={FigmaLogo} w='17px' h='26px' color='white' /> */}
                   </Flex>
                   <Box me='auto'>
                     <Text
                       fontWeight='800'
                       mb='10px'
                       color={textColor}
-                      fontSize={{ base: "22px", md: "34px" }}
+                      fontSize={{ base: "22px", md: "21px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      100+
+                      Deliver Better Infrastructure, Faster
                     </Text>
                     <Text
                       fontWeight='700'
@@ -178,10 +178,10 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      UI Component
+                        Configuration Management
                     </Text>
                   </Box>
-                  <Link
+                  {/* <Link
                     mt={{ base: "20px", md: "unset" }}
                     w='max-content'
                     color={brandColor}
@@ -191,7 +191,7 @@ export default function GetStarted() {
                     whiteSpace='nowrap'
                     textDecor='underline'>
                     See XeroCodee UI for Figma!
-                  </Link>
+                  </Link> */}
                 </Flex>
               </Card>
               <Card
@@ -217,10 +217,10 @@ export default function GetStarted() {
                       fontWeight='800'
                       mb='10px'
                       color={textColor}
-                      fontSize={{ base: "22px", md: "34px" }}
+                      fontSize={{ base: "22px", md: "21px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      4+
+                       Increase Operational Efficiency
                     </Text>
                     <Text
                       fontWeight='700'
@@ -228,7 +228,7 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      Database
+                        Patching & Upgrades | Vulnerability Management
                     </Text>
                   </Box>
                   {/* <Link
@@ -265,10 +265,10 @@ export default function GetStarted() {
                       fontWeight='800'
                       mb='10px'
                       color={textColor}
-                      fontSize={{ base: "22px", md: "34px" }}
+                      fontSize={{ base: "22px", md: "21px" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       maxW={{ base: "80%", md: "unset" }}>
-                      50+
+                      Ensure a Compliant & Secure Posture
                     </Text>
                     <Text
                       fontWeight='700'
@@ -277,7 +277,7 @@ export default function GetStarted() {
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'
                       whiteSpace='nowrap'>
-                      Pre-Define API 
+                      Compliance Automation | Monitoring
                     </Text>
                   </Box>
                   <Box

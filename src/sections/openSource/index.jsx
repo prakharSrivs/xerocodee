@@ -55,7 +55,7 @@ export default function GetStarted() {
                 fontSize='sm'
                 w='100%'
                 mb='10px'>
-                Build complex applications
+                Enterprise Scale
               </Text>
               <Text
                 fontWeight='800'
@@ -64,7 +64,7 @@ export default function GetStarted() {
                 lineHeight={{ base: "34px", md: "60px" }}
                 mb='20px'
                 maxW={{ base: "80%", md: "unset" }}>
-                10x Faster
+                  deploys, manages & scales
               </Text>
               <Card
                 maxW={{ base: "100%", md: "unset" }}
@@ -79,7 +79,7 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      1: Use Webflow as the front-end for your web app.
+                        Find the best architecture
                     </Text>
                   </Box>
               </Card>
@@ -96,7 +96,7 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                     2: Integrate your website with any REST API.
+                        Deploy and Manage
                     </Text>
                   </Box>
               </Card>
@@ -113,11 +113,11 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      3: Build login functionality and Stripe payment flows.
+                        Scale anywhere
                     </Text>
                   </Box>
               </Card>
-                            <Card
+              <Card
                 maxW={{ base: "100%", md: "unset" }}
                 minW={{ base: "200px", lg: "500px", xl: "545px" }}
                 p='30px'
@@ -130,7 +130,24 @@ export default function GetStarted() {
                       fontSize={{ base: "sm", md: "sm" }}
                       lineHeight={{ base: "100%", md: "100%" }}
                       letterSpacing='2.48px'>
-                      4: Continue hosting your project via Webflow.
+                        Visibility and management
+                    </Text>
+                  </Box>
+              </Card>
+              <Card
+                maxW={{ base: "100%", md: "unset" }}
+                minW={{ base: "200px", lg: "500px", xl: "545px" }}
+                p='30px'
+                mb='20px'
+                me={{ base: "0px", xl: "30px" }}>
+                  <Box me='auto'>
+                    <Text
+                      fontWeight='700'
+                      color={textColorSecondary}
+                      fontSize={{ base: "sm", md: "sm" }}
+                      lineHeight={{ base: "100%", md: "100%" }}
+                      letterSpacing='2.48px'>
+                        Data Protection and Platform Security
                     </Text>
                   </Box>
               </Card>
