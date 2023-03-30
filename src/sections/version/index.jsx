@@ -2,10 +2,10 @@ import React from 'react';
 // Chakra imports
 import { Box, Button, Flex, Image, Link, Text, useColorModeValue, SimpleGrid } from '@chakra-ui/react';
 // Assets
-import Typescript from 'assets/img/started/Typescript.png';
-import Next from 'assets/img/started/Next.png';
-import Vue from 'assets/img/started/Vue.png';
-import ReactJS from 'assets/img/started/React.png';
+import Gtilab from 'assets/img/started/gitlab.png';
+import AWS from 'assets/img/started/aws.png';
+import Kube from 'assets/img/started/kube.png';
+import Grafana from 'assets/img/started/grafana.png';
 
 
 
@@ -51,7 +51,7 @@ export default function Tools() {
 							fontWeight='800'
 							fontSize={{ base: '28px', md: '48px' }}
 							mb={{ base: '14px', lg: '30px' }}>
-							Designers and Developers on one platform
+							Application life-cycle Orchestration
 						</Text>
 					</Flex>
 				</Flex>
@@ -66,29 +66,29 @@ export default function Tools() {
 									fontSize={{ base: '20px', md: '32px' }}
 									lineHeight={{ base: '140%', md: '100%' }}
 									maxW={{ base: '90%', md: 'unset' }}>
-									TypeScript
+									Gitlab
 								</Text>
 								<Link
 									mt={{ base: '20px', md: 'unset' }}
 									w='max-content'
 									color={brandColor}
 									fontWeight='700'
-									href='/-ts'
+									href='https://about.gitlab.com/'
 									fontSize='md'
 									whiteSpace='nowrap'>
 									<Button
 										borderRadius='12px'
-										bg='#3965FF'
+										bg='#E24329'
 										color='#fff'
 										_hover={{ opacity: 0.8 }}
 										h={{ base: '34px', md: '54px' }}
 										fontSize={{ base: 'xs', md: 'sm' }}>
-										TypeScript {'>'}
+										Gitlab {'>'}
 									</Button>
 								</Link>
 							</Box>
 							<Image
-								src={Typescript}
+								src={Gtilab}
 								w={{ base: '70px', md: '130px' }}
 								h={{ base: '70px', md: '130px' }}
 							/>
@@ -104,29 +104,29 @@ export default function Tools() {
 									fontSize={{ base: '20px', md: '32px' }}
 									lineHeight={{ base: '140%', md: '100%' }}
 									maxW={{ base: '90%', md: 'unset' }}>
-									ReactJS
+									AWS
 								</Text>
 								<Link
 									mt={{ base: '20px', md: 'unset' }}
 									w='max-content'
 									color={brandColor}
 									fontWeight='700'
-									href='/'
+									href='https://aws.amazon.com/'
 									fontSize='md'
 									whiteSpace='nowrap'>
 									<Button
 										borderRadius='12px'
-										bg='#61DAFB'
+										bg='#FF9900'
 										color='#000000'
 										_hover={{ opacity: 0.8 }}
 										h={{ base: '34px', md: '54px' }}
 										fontSize={{ base: 'xs', md: 'sm' }}>
-										ReactJS {'>'}
+										AWS {'>'}
 									</Button>
 								</Link>
 							</Box>
 							<Image
-								src={ReactJS}
+								src={AWS}
 								w={{ base: '70px', md: '130px' }}
 								h={{ base: '70px', md: '130px' }}
 							/>
@@ -142,29 +142,29 @@ export default function Tools() {
 									fontSize={{ base: '20px', md: '32px' }}
 									lineHeight={{ base: '140%', md: '100%' }}
 									maxW={{ base: '90%', md: 'unset' }}>
-									NextJS
+									Kubernetes
 								</Text>
 								<Link
 									mt={{ base: '20px', md: 'unset' }}
 									w='max-content'
 									color={brandColor}
 									fontWeight='700'
-									href='/'
+									href='https://kubernetes.io/'
 									fontSize='md'
 									whiteSpace='nowrap'>
 									<Button
 										borderRadius='12px'
-										bg='#000000'
+										bg='#326CE5'
 										color='#ffffff'
 										_hover={{ opacity: 0.8 }}
 										h={{ base: '34px', md: '54px' }}
 										fontSize={{ base: 'xs', md: 'sm' }}>
-										NextJS {'>'}
+										Kubernetes {'>'}
 									</Button>
 								</Link>
 							</Box>
 							<Image
-								src={Next}
+								src={Kube}
 								w={{ base: '70px', md: '130px' }}
 								h={{ base: '70px', md: '130px' }}
 							/>
@@ -180,29 +180,29 @@ export default function Tools() {
 									fontSize={{ base: '20px', md: '32px' }}
 									lineHeight={{ base: '140%', md: '100%' }}
 									maxW={{ base: '90%', md: 'unset' }}>
-									VueJS
+									Grafana
 								</Text>
 								<Link
 									mt={{ base: '20px', md: 'unset' }}
 									w='max-content'
 									color={brandColor}
 									fontWeight='700'
-									href='/'
+									href='https://grafana.com/'
 									fontSize='md'
 									whiteSpace='nowrap'>
 									<Button
 										borderRadius='12px'
-										bg='#41B883'
+										bg='#F48423'
 										color='#000000'
 										_hover={{ opacity: 0.8 }}
 										h={{ base: '34px', md: '54px' }}
 										fontSize={{ base: 'xs', md: 'sm' }}>
-										VueJS {'>'}
+										Grafana {'>'}
 									</Button>
 								</Link>
 							</Box>
 							<Image
-								src={Vue}
+								src={Grafana}
 								w={{ base: '70px', md: '130px' }}
 								h={{ base: '70px', md: '130px' }}
 							/>

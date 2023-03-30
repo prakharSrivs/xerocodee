@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Grid, Link, Icon, Image, Text, useColorModeValue } from '@chakra-ui/react';
 
 // Assets
-import heroImageLight from 'assets/img/hero/hero-image-light-1.png';
+import heroImageLight from 'assets/img/hero/1.svg';
 import heroBgLight from 'assets/img/hero/heroBgLight.png';
 // import { JavascriptLogo, NextLogo, ReactLogo, TypescriptLogo, TailwindLogo } from 'components/icons/Icons';
 import { MdChevronRight } from 'react-icons/md';

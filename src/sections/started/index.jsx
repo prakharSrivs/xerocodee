@@ -4,8 +4,8 @@ import { Box, Flex, Button, Icon, Grid, Image, Text, Link, useColorModeValue } f
 import Typescript from 'assets/img/started/Icon.png';
 
 // Assets
-import imageDark from 'assets/img/started/section-4.png';
-import imageLight from 'assets/img/started/section-4.png';
+import imageDark from 'assets/img/started/3.svg';
+import imageLight from 'assets/img/started/3.svg';
 import { MdChevronRight } from 'react-icons/md';
 
 // Custom components

@@ -13,7 +13,8 @@ import {
 // import GitHubButton from "react-github-btn";
 // import { IoLogoGithub } from "react-icons/io";
 // import { FaDiscord } from "react-icons/fa";
-import { FigmaLogo } from "components/icons/Icons";
+
+// import { FigmaLogo } from "components/icons/Icons";
 
 // Custom components
 import Card from "components/card/Card";

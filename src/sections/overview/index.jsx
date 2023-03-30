@@ -1,19 +1,12 @@
 import React from 'react';
+
 // Chakra imports
 import { Button, Box, Flex, Text, Link, useColorModeValue } from '@chakra-ui/react';
-// Assets
 
-import PropsPanel from 'assets/img/overview/props-panel.png';
-import LayerPanel from 'assets/img/overview/layer-panel.png';
-import Shortcuts from 'assets/img/overview/shortcuts.png';
-
-import Adaptive from 'assets/img/overview/adaptive.png';
-import Animation from 'assets/img/overview/animation.png';
-import Themes from 'assets/img/overview/themes.png';
-import Database from 'assets/img/overview/database.png';
-import API from 'assets/img/overview/api.png';
-
-
+// Language
+import JS from 'assets/img/overview/js.png';
+import TS from 'assets/img/overview/ts.png';
+import Python from 'assets/img/overview/python.png';
 
 import InnerContent from 'layouts/innerContent';
 import PageCard from './components/PageCard';
@@ -61,29 +54,29 @@ export default function Overview() {
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', md: '20px' }}
-						title='Props Panel'
-						image={PropsPanel}
+						title='JavaScript'
+						image={JS}
 					/>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', xl: '20px' }}
-						title='Layer Panel'
-						image={LayerPanel}
+						title='TypeScript'
+						image={TS}
 					/>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', md: '20px', xl: '0px' }}
-						title='Shortcuts'
-						image={Shortcuts}
+						title='Python'
+						image={Python}
 					/>
 				</Flex>
 
-				<Flex mb='72px' justify='center' w={{ base: '50%', md: '120%' }} flexWrap='wrap'>
+				{/* <Flex mb='72px' justify='center' w={{ base: '50%', md: '120%' }} flexWrap='wrap'>
 					<PageCard
 						mb='20px'
 						me={{ base: '0px', md: '20px' }}
-						title='Adaptive Design'
-						image={Adaptive}
+						title='Source Code'
+						image={Source}
 					/>
 					<PageCard
 						mb='20px'
@@ -109,7 +102,7 @@ export default function Overview() {
 						title='API'
 						image={API}
 					/>
-				</Flex>
+				</Flex> */}
 
 				<Link href='/'>
 					<Button h='50px' borderRadius='12px' variant='darkBrand' fontSize='sm'>
